@@ -1,0 +1,22 @@
+{
+    "name": "cs324",
+    "version": "1.0.0",
+    "description": "coursework",
+    "main": "index.js",
+    "scripts": {
+        "start": "ts-node ./src/index.ts",
+        "dev": "webpack serve --config ./src/webpack.dev.js"
+    },
+    "author": "jaubrey",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^16.11.10",
+        "@types/three": "^0.134.0",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.2"
+    },
+    "repository": {},
+    "dependencies": {
+        "three": "^0.134.0"
+    }
+}
