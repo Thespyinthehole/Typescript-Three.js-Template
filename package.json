@@ -3,10 +3,7 @@
     "version": "1.0.0",
     "description": "coursework",
     "main": "index.js",
-    "scripts": {
-        "start": "ts-node ./src/index.ts",
-        "dev": "webpack serve --config ./src/webpack.dev.js"
-    },
+    "scripts": {},
     "author": "jaubrey",
     "license": "ISC",
     "devDependencies": {
