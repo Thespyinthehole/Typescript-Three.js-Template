@@ -4,7 +4,7 @@
     "description": "description",
     "main": "index.js",
     "scripts": {
-        "build": "clear && tsc && grep -rl 'import \\* as THREE from \\'three\\''  build | xargs -Ifilename sed -i ./filename -e 's/import \\* as THREE from \\'three\\'/import \\* as THREE from \\'\\.\\.\\/node_modules\\/three\\/build\\/three\\.module\\.js\\'/g' build/*.js",
+        "build": "clear && tsc && grep -rl 'import \\* as THREE from \\'three\\''  build | xargs -Ifilename sed -i ./filename -e 's/import \\* as THREE from \\'three\\'/import \\* as THREE from \\'\\/node_modules\\/three\\/build\\/three\\.module\\.js\\'/g' build/*.js",
     },
     "author": "authoer",
     "license": "ISC",
