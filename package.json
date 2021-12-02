@@ -4,15 +4,19 @@
     "description": "description",
     "main": "index.js",
     "scripts": {
-        "build": "clear && tsc && grep -rl \"import \\* as THREE from 'three'\"  build | xargs -Ifilename sed -i ./filename -e \"s/import \\* as THREE from 'three'/import \\* as THREE from '\\/node_modules\\/three\\/build\\/three\\.module\\.js'/g\" build/*.js",
+        "build": "clear && tsc",
+        "watch": "watch \"npm run build\" ./src --wait=0.5",
+        "start": "es-dev-server --app-index index.html --node-resolve --watch --open"
     },
-    "author": "authoer",
+    "author": "author",
     "license": "ISC",
     "devDependencies": {
         "@types/node": "^16.11.10",
         "@types/three": "^0.134.0",
+        "es-dev-server": "^2.1.0",
         "ts-node": "^10.4.0",
-        "typescript": "^4.5.2"
+        "typescript": "^4.5.2",
+        "watch": "^1.0.2"
     },
     "repository": {},
     "dependencies": {
