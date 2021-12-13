@@ -9,3 +9,5 @@ Use `npm run start` to start a server
 Go to the localhost on your browser.
 
 You may want to change some of the information in `package.json`.
+
+Any typescript files should be within the `src` directory 
